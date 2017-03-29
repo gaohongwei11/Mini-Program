@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<style>
+		body{
+			margin:0;
+			width: 100%;
+		}
+		.wrapper{
+			width: 100%;
+		}
+		header{
+			height: 3rem;
+			background-color: #00bbd2;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 2rem;
+			color: #fff;
+		}
+		main{
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+		}
+		.box{
+			margin:1rem;
+			padding: 1rem;
+			width: 20rem;
+			height: 10rem;
+			flex-grow: 1;
+		}
+		.box:nth-child(1){
+			background-color: #f5be25;
+		}
+		.box:nth-child(2){
+			background-color: #fafafa;
+		}
+		.box:nth-child(3){
+			background-color: #33b679;
+		}
+		.box:nth-child(4){
+			background-color: #565d80;
+		}
+		.box:nth-child(5){
+			background-color: #457ad1;
+		}
+		.box:nth-child(6){
+			background-color: #89929f;
+		}
+		/*@media screen and (max-width: 640px){
+			main{
+				flex-direction: column;
+				align-items: center;
+			}
+		}*/
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<div class="menu">Menu</div>
+			<div class="time">10:00</div>
+		</header>
+		<main>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis enim rem delectus accusamus error neque tenetur explicabo soluta consequuntur cupiditate, quidem, quasi aliquid! Vero iusto ipsa laborum non ad culpa!</div>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, recusandae odio culpa mollitia soluta similique harum doloremque a animi aliquam sed repellendus tempore maxime quaerat corporis rerum nam reiciendis laborum.</div>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime nesciunt suscipit esse repellendus cum molestias, nihil expedita facilis, et saepe provident impedit magnam sequi error illo, dicta sunt ab iusto.</div>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor hic quos nam ducimus modi minima, esse optio sint, cum ab atque neque iusto possimus quas molestias alias mollitia doloribus repellat.</div>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum dolores beatae laudantium iusto, tenetur nulla facilis perferendis nostrum nesciunt. Doloribus quam nobis, soluta quis aut ducimus numquam, quae eaque perferendis?</div>
+			<div class="box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam, aliquam tempora, accusamus vel, quaerat dicta dolor iste perferendis alias, iure beatae rem neque id culpa necessitatibus quidem! Quia, eos. Sit?</div>
+		</main>
+	</div>
+</body>
+</html>

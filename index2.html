@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<style type="text/css">
+		body{
+			margin:0;
+			background-color: #eee;
+		}
+		header{
+			background-color: #00bbd2;
+			color: #fff;
+		}
+		nav{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			height: 2.5rem;
+			padding: 0 1em;
+			align-self: flex-start;
+		}
+		.weather{
+			height: 18rem;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 6rem;
+			padding: 0 1rem;
+		}
+		main{
+			margin:-30px auto 0;
+			background-color: #fff;
+			width: 80%;
+		}
+		.list{
+			padding: 0 1rem;
+			height: 5rem;
+			border-bottom: 1px solid grey;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.msg{
+			display: flex;
+			justify-content: center;
+			color: #fff;
+		}
+		.message{
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			margin:-25px 5px 0;
+			padding: 5px;
+			background-color: #07a4b5;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.message:last-child{
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			margin:-30px 5px 0;
+			background-color: #eeff41;
+			color: #000
+		}
+		@media screen and (max-width: 860px){
+			main{
+				margin:0;
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<nav>
+				<div class="menu">Paris</div>
+				<div class="time">10:00</div>
+			</nav>
+			<div class="weather">28℃</div>
+		</header>
+		<main>
+			<div class="msg">
+				<div class="message">99%</div>
+				<div class="message">0</div>
+				<div class="message">88%</div>
+				<div class="message">1015</div>
+				<div class="message">31</div>
+			</div>
+			<div class="list">
+				<div class="text">SKY IS CLEAR</div>
+				<div class="date">FRI</div>
+			</div>
+			<div class="list">
+				<div class="text">SKY IS CLEAR</div>
+				<div class="date">FRI</div>
+			</div>
+			<div class="list">
+				<div class="text">SKY IS CLEAR</div>
+				<div class="date">FRI</div>
+			</div>
+			<div class="list">
+				<div class="text">SKY IS CLEAR</div>
+				<div class="date">FRI</div>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
