@@ -1,0 +1,23 @@
+<!--logs.wxml-->
+<view class="wrapper">
+  <!-- <block wx:for="{{logs}}" wx:for-item="log" wx:key="*this">
+    <text class="log-item">{{index + 1}}. {{log}}</text>
+  </block> -->
+  <view class="top">
+    <image src="{{image}}"></image>
+    <text class="description">{{description}}</text>
+  </view>
+    <view class="content">
+      <view class="editors">
+        <text>主编:</text>
+        <image wx:for="{{editors}}" wx:key="index" mode='aspectFit' src="{{item.avatar}}"></image>
+      </view>
+      <!-- <view> -->
+        <view class="stories" wx:for="{{stories}}" wx:key="index" data-id="{{item.id}}"
+      bindtap="goToStory">
+          <text>{{item.title}}</text>
+          <image wx:if="{{item.images}}" src="{{item.images[0]}}"></image>
+        </view>
+      <!-- </view> -->
+    </view>
+</view>

@@ -1,0 +1,35 @@
+<!--pages/topics/topics.wxml-->
+<!-- <text>pages/topics/topics.wxml</text> -->
+
+<view class="classname">{{title}}</view>
+<swiper 
+  indicator-dots="true"
+  indicator-color="rgba(0, 0, 0, .3)"
+  indicator-active-color="#fff"
+  autoplay="true" 
+  interval="2000" 
+  duration="500"
+  circular="true">
+  <block wx:for="{{top_stories}}" wx:key="{{index}}">
+    <swiper-item data-id="{{item.id}}" bindtap="goToStory" class="image" style="background-image:url({{item.image}})">
+      <view class='shade'></view>
+      <text class='title'>{{item.title}}</text>
+    </swiper-item>
+  </block>
+</swiper>
+<template name="msgItem">
+  <view class="content" wx:for="{{newsList}}" wx:key="index">
+    <text class='todayNews'>{{item.date}}</text>
+    <view 
+      class='new'
+      wx:for="{{item.stories}}"
+      wx:for-item="story" 
+      wx:key="index"
+      data-id="{{story.id}}"
+      bindtap="goToStory">
+      <text>{{story.title}}</text>
+      <image class='thumbnail' src="{{story.images}}"/>
+    </view>
+  </view>
+</template>
+<template is="msgItem" data="{{newsList}}"/>

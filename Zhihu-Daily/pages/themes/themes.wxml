@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='themes' 
+    wx:for="{{themes}}" 
+    wx:key="index"
+    data-id="{{item.id}}"
+    bindtap="goToTheme">
+    <view class='theme'>
+      <image class='thumbnail' src="{{item.thumbnail}}"></image>
+      <text class='name'>{{item.name}}</text>
+    </view>
+    <view class='description'>
+      <text>{{item.description}}</text>
+    </view>
+  </view>
+</view>
